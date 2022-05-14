@@ -1,0 +1,72 @@
+.form {
+  margin: 1rem 0;
+  height: 19rem;
+  overflow: auto;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.control input {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+.actions button {
+  font: inherit;
+  color: #2f5edd;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ff3604;
+  color: white;
+}
+
+.actions .submit {
+  border: 1px solid transparent;
+  background-color: #2f5edd;
+  color: white;
+}
+
+.actions .submit:hover,
+.actions .submit:active {
+  background-color: #ff3604;
+}
+
+.invalid label {
+  color: #ff3604;
+}
+.invalid span {
+  color: #ff3604;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}

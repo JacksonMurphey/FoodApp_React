@@ -1,0 +1,47 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+
+  /* height: calc(50vh - 25px); */
+  /* overflow-y: scroll;
+  position: sticky; */
+}
+
+.MealsLoading {
+  text-align: center;
+}
+
+.MealsError {
+  text-align: center;
+  color: red;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Commented out code in .meals and below, allow for my box to have scroll bar */
+/* ::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+} */
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
